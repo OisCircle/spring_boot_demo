@@ -1,25 +1,17 @@
 package com.qcq.spring_boot_demo.entity;
 
 import com.baomidou.mybatisplus.annotations.TableField;
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.annotations.TableName;
-import com.baomidou.mybatisplus.enums.IdType;
 
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-@TableName("user")
 public class User implements Serializable {
-	@TableId(value = "id", type = IdType.AUTO)
 	private Long id;//
 	private String username;//用户昵称
 	private String password;//密码
-	@TableField("create_time")
 	private Date createTime;//创建时间
-	@TableField("last_login_time")
 	private Date lastLoginTime;//最后登录时间
-	@TableField("is_forbidden")
 	private Long isForbidden;//1:有效，0:禁止登录
 	@TableField(exist = false)
 	private List<String> roles;

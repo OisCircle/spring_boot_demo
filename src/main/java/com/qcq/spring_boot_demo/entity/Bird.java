@@ -1,7 +1,5 @@
 package com.qcq.spring_boot_demo.entity;
 
-import com.baomidou.mybatisplus.annotations.TableField;
-
 /**
  * @Author O
  * @Description mybatis_plus test entity
@@ -12,7 +10,6 @@ public class Bird {
 	private int id;
 	private String name;
 	private int age;
-	@TableField("bird_father_name")
 	private String birdFatherName;
 
 	public Bird() {

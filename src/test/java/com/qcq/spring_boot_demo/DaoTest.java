@@ -26,6 +26,5 @@ public class DaoTest {
 		System.out.println(userService.selectById(1l));
 		System.out.println(permissionService.selectPermissionsByUserID(1l));
 		System.out.println(roleService.selectRolesByUserId(1l));
-		System.out.println(helloService.sayHello());
 	}
 }

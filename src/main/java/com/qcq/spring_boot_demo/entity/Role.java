@@ -1,14 +1,8 @@
 package com.qcq.spring_boot_demo.entity;
 
-import com.baomidou.mybatisplus.annotations.TableId;
-import com.baomidou.mybatisplus.annotations.TableName;
-import com.baomidou.mybatisplus.enums.IdType;
-
 import java.io.Serializable;
 
-@TableName("role")
 public class Role implements Serializable {
-	@TableId(value = "id", type = IdType.AUTO)
 	private Long id;//
 	private String name;//角色名称
 	private String description;//角色类型
