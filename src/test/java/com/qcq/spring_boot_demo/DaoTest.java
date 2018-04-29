@@ -3,6 +3,7 @@ package com.qcq.spring_boot_demo;
 import com.qcq.spring_boot_demo.service.PermissionService;
 import com.qcq.spring_boot_demo.service.RoleService;
 import com.qcq.spring_boot_demo.service.UserService;
+import com.qcq.spring_boot_demo.service.impl.HelloService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,10 +19,13 @@ public class DaoTest {
 	RoleService roleService;
 	@Autowired
 	PermissionService permissionService;
+	@Autowired
+	HelloService helloService;
 	@Test
 	public void testDao() {
 		System.out.println(userService.selectById(1l));
 		System.out.println(permissionService.selectPermissionsByUserID(1l));
 		System.out.println(roleService.selectRolesByUserId(1l));
+		System.out.println(helloService.sayHello());
 	}
 }
