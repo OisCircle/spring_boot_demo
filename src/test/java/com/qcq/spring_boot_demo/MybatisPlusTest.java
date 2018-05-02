@@ -44,5 +44,7 @@ public class MybatisPlusTest {
 				.orderBy("dd").orderBy("d1,d2");
 		System.out.println(ew.getSqlSegment());
 
+
+
 	}
 }
